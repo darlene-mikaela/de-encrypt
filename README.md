@@ -6,3 +6,6 @@ caesar.py is a file containing a module to encrypt and decrypt capslocked text a
 
 ## vegenere.py
 vegenere.py is a file containing a module using the vegenere table to encrypt and decrypt a sequence of capslocked letters. Also known as the polyalphabetic cipher.
+
+## railfence.py
+railfence.py is a module to encrypt and decrypt a string of text using the railfence cipher
