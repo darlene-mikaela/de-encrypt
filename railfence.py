@@ -3,7 +3,7 @@ class Railfence:
     self.key = key
 
   def makeTable(self,text,rail=""):
-    return [['*' for i in range(len(text))]
+    return [['%%' for i in range(len(text))]
             for j in range(self.key)]
 
   def encrypt(self,plainText):
@@ -26,7 +26,7 @@ class Railfence:
     #cipher
     for rails in rail:
       for railss in rails:
-        if railss != "*":
+        if railss != "%%":
           cipher += railss
 
     return cipher
@@ -43,7 +43,7 @@ class Railfence:
       elif row==self.key-1:
         down = False
 
-      rail[row][col] = "&"
+      rail[row][col] = "&&"
       col += 1
       row = (row+1) if down else (row-1)
 
@@ -51,7 +51,7 @@ class Railfence:
     index = 0 
     for i in range(len(rail)):
       for j in range(len(rail[i])):
-        if rail[i][j] == "&" and index < len(cipher):
+        if rail[i][j] == "&&" and index < len(cipher):
           rail[i][j] = cipher[index]
           index += 1
 
