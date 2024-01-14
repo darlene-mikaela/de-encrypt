@@ -9,3 +9,9 @@ vegenere.py is a file containing a module using the vegenere table to encrypt an
 
 ## railfence.py
 railfence.py is a module to encrypt and decrypt a string of text using the railfence cipher
+### makeTable(self,text,rail="")
+makeTable function takes only 1 argument, the text to make into the railfence. It arranges the string into a zigzag form by inserting it to the array
+### encrpyt(self,plainText)
+Also takes only 1 argument that is the text to cipher/encrypt. The function checks which direction it is going and assigns each of the chars in the plainText to the appropriate place in the railfence using the makeTable function. Then it outputs the cipher text by joining all of the chars per row.
+### decrypt(self,cipher)
+...
