@@ -15,3 +15,9 @@ makeTable function takes only 1 argument, the text to make into the railfence. I
 Also takes only 1 argument that is the text to cipher/encrypt. The function checks which direction it is going and assigns each of the chars in the plainText to the appropriate place in the railfence using the makeTable function. Then it outputs the cipher text by joining all of the chars per row.
 ### decrypt(self,cipher)
 ...
+
+## polygraphic.py
+...
+
+## transposition.py
+...
