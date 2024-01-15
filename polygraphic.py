@@ -1,4 +1,3 @@
-import numpy as np
 import re
 
 class Polygraph:
@@ -22,12 +21,10 @@ class Polygraph:
     for i in range(keyLen-len(chars)):
       table[-1].append("?")
 
-    #make to 5x5 table
-    table = np.transpose(table)
     chars = ""
-
-    for i in range(len(table)):
-      chars += "".join(table[i])
+    for i in range(len(table[0])):
+      for j in range(len(table)):
+        chars += (table[j][i])
     chars = re.sub("[^A-Z0-9]+", "", chars)
 
     table = []
