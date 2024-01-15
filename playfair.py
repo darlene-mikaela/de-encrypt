@@ -3,8 +3,6 @@ import re
 class Polygraph:
   #create table
   def __init__(self,key,tables="",pairs=""):
-    self.key = list(key)
-
     chars = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890")
     table = [[keys for keys in key]]
     keyLen = len(key)
